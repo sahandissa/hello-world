@@ -1,3 +1,2 @@
-# hello-world
-test
-testing shit out
+# Assignment 2
+Mobile apps assignment 2 surveying appp
