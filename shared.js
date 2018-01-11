@@ -47,3 +47,10 @@ function displayMessage(message, timeout)
     }
 }
 
+
+
+//Class for regions
+// function regionClass(corners){
+//     this.boundryPoints = corners;
+//     this.savedTime = 
+// }
