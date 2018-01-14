@@ -47,10 +47,30 @@ function displayMessage(message, timeout)
     }
 }
 
+var map;
+var infoWindow ;
+var currentPosition;
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 0.0, lng: 0.0},
+      zoom: 16
+    });
+}
 
 
-//Class for regions
-// function regionClass(corners){
-//     this.boundryPoints = corners;
-//     this.savedTime = 
-// }
+function region(cornerPositions){
+    var closedPathArray = cornerPositions;
+    closedPathArray[cornerPositions.length] = cornerPositions[0];
+    this.cornerPositions = cornerPositions;
+    this.savedTime;
+    this.computeArea= function(pathPolygon){
+        
+        var polygonArea = google.maps.geometry.spherical.computeArea(pathPolygon.getPath());
+        };
+    this.perimeter;
+    
+    
+}      
+          
+      
